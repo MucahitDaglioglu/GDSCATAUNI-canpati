@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "252544389483",
+    "project_id": "canpati-13262",
+    "storage_bucket": "canpati-13262.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252544389483:android:197ce3c62709d6318e7c2e",
+        "android_client_info": {
+          "package_name": "com.example.canpati"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252544389483-t7sm68enb2bg0ajur38ltrnnu5tgekjd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwQuPMGqDa9VfWEQEzbg3ESCopy1Ofkcw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252544389483-t7sm68enb2bg0ajur38ltrnnu5tgekjd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

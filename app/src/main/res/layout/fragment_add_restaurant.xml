@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddRestaurantFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp"
+            app:cardBackgroundColor="#FFCEAB"
+            app:cardCornerRadius="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_animals"
+                android:layout_gravity="right"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_margin="6dp">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Restaurant"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    style="@style/TextAppearance.MaterialComponents.Body2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt1"
+                    android:layout_marginTop="2dp"
+                    android:text="Add your restaurant for street animals"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--restaurant information-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/restaurantNameTil"
+            android:layout_below="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_centerInParent="true">
+
+            <EditText
+                android:id="@+id/restaurantNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Restaurant Name" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/restaurantAddressTil"
+            android:layout_below="@+id/restaurantNameTil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_centerInParent="true">
+
+            <EditText
+                android:id="@+id/restaurantAddressEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Restaurant Address"
+                android:inputType="textMultiLine"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/restaurantPhoneTil"
+            android:layout_below="@+id/restaurantAddressTil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_centerInParent="true">
+
+            <EditText
+                android:id="@+id/restaurantPhoneEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Restaurant Phone"
+                android:inputType="phone"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/restaurantCityTil"
+            android:layout_below="@+id/restaurantPhoneTil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_centerInParent="true">
+
+            <EditText
+                android:id="@+id/restaurantCityEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Restaurant City"
+                android:inputType="text"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/restaurantCityTil">
+            <Button
+                android:id="@+id/addBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ Add"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="left"
+                android:layout_marginEnd="4dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>
