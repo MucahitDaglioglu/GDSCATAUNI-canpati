@@ -90,7 +90,6 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this, "Logged In as $email", Toast.LENGTH_SHORT).show()
 
                 //open profile
-                //not burada home fragmenta git
                 startActivity(Intent(this, ProfileActivity::class.java))
                 finish()
             }

@@ -69,7 +69,6 @@ class AddRestaurantFragment : Fragment() {
                 Log.d("tg","4${TextUtils.isEmpty(city)}")
         }
         else {
-            //canlı veritabanına ekleme yapacak
             Toast.makeText(requireContext(),"snc: ${Patterns.PHONE.matcher(phone).matches()}",Toast.LENGTH_SHORT).show()
 
             db = FirebaseFirestore.getInstance()
